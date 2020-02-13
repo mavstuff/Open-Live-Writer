@@ -449,7 +449,7 @@ namespace OpenLiveWriter.PostEditor.PostHtmlEditing
                         //insert the default image html
                         String imageElementAttrs = imgUri.IsFile ? String.Format(CultureInfo.InvariantCulture, " width=\"{0}\" height=\"{1}\"", imageSize.Width, imageSize.Height) : String.Empty;
 
-                        htmlBuilder.AppendFormat(CultureInfo.InvariantCulture, "<img src=\"{0}\" {1} />", HtmlUtils.EscapeEntities(UrlHelper.SafeToAbsoluteUri(imgUri)), imageElementAttrs);
+                        htmlBuilder.AppendFormat(CultureInfo.InvariantCulture, "<img class=\"img-responsive\" src=\"{0}\" {1} />", HtmlUtils.EscapeEntities(UrlHelper.SafeToAbsoluteUri(imgUri)), imageElementAttrs);
                     }
                 }
 

@@ -164,7 +164,7 @@ namespace OpenLiveWriter.PostEditor.PostHtmlEditing
                 HtmlImageTargetDecorator.Id,
                 HtmlMarginDecorator.Id,
                 HtmlAlignDecorator.Id,
-                DropShadowBorderDecorator.Id,
+                //DropShadowBorderDecorator.Id,
                 NoRecolorDecorator.Id,
                 NoSharpenDecorator.Id,
                 NoBlurDecorator.Id,

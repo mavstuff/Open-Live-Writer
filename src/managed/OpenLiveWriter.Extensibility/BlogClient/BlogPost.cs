@@ -395,7 +395,7 @@ namespace OpenLiveWriter.Extensibility.BlogClient
         }
 
         public static readonly string ClearBreak = "<br clear=\"all\" />"; // float clearing break
-        public static readonly string HorizontalLine = "<hr />"; // horizontal rule
+        public static readonly string HorizontalLine = "<hr id=\"system-readmore\"/>"; // horizontal rule
         public static readonly string PlainTextHorizontalLine = "--------------------------------------------------------------------------------"; // 80 dashes
         public static readonly string ExtendedEntryBreak = "<!--more-->";  //the more text comment
         public static readonly string ExtendedEntryBreakMoreText = "more"; //the value of the more text comment

@@ -494,8 +494,8 @@ namespace OpenLiveWriter.PostEditor.PostHtmlEditing.ImageEditing.Decorators
                 defaultBoundsSize = ImageSizeHelper.GetSizeConstraints(boundsSize);
             else
             {
-                int defaultWidth = settings.GetInt(DEFAULT_WIDTH, 240);
-                int defaultHeight = settings.GetInt(DEFAULT_HEIGHT, 240);
+                int defaultWidth = settings.GetInt(DEFAULT_WIDTH, 640);
+                int defaultHeight = settings.GetInt(DEFAULT_HEIGHT, 480);
                 defaultBoundsSize = new Size(defaultWidth, defaultHeight);
             }
             return defaultBoundsSize;
@@ -510,7 +510,7 @@ namespace OpenLiveWriter.PostEditor.PostHtmlEditing.ImageEditing.Decorators
             if (!Enum.IsDefined(typeof(ImageSizeName), defaultSizeName))
             {
                 // This is our fallback if the hosting application returns a bad value.
-                defaultSizeName = ImageSizeName.Small.ToString();
+                defaultSizeName = ImageSizeName.Full.ToString();
             }
 
             return (ImageSizeName)Enum.Parse(typeof(ImageSizeName), settings.GetString(DEFAULT_SIZE_NAME, defaultSizeName));

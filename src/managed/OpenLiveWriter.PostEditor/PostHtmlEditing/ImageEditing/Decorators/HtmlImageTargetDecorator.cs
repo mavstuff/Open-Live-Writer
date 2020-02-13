@@ -224,7 +224,7 @@ namespace OpenLiveWriter.PostEditor.PostHtmlEditing.ImageEditing.Decorators
             }
         }
 
-        private readonly LinkTargetType uninitializedDefaultLinkTarget = LinkTargetType.IMAGE;
+        private readonly LinkTargetType uninitializedDefaultLinkTarget = LinkTargetType.NONE;
 
         internal Size DefaultTargetBoundsSize
         {

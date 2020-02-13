@@ -47,8 +47,8 @@ namespace OpenLiveWriter.PostEditor
 
         private PropVariant GetImageDefaultSize()
         {
-            // Writer defaults to inserting images as Small.
-            return new PropVariant(ImageSizeName.Small.ToString());
+            // Writer defaults to inserting images as Full.
+            return new PropVariant(ImageSizeName.Full.ToString());
         }
 
         private PropVariant GetLanguage()
